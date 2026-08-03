@@ -130,6 +130,53 @@ body {
     font-weight: 600;
     margin-bottom: 10px;
 }
+/* Why Me Styles */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Makes it look good on mobile */
+}
+
+.about-card {
+    flex: 1;
+    min-width: 280px;
+    padding: 40px 30px;
+    background: #fff;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    border-color: #00d4ff;
+}
+
+.about-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.25rem;
+    color: #111;
+}
+
+.about-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+}
 
 /* --- 6. DARK CONTACT CARD --- */
 .contact-wrapper {
