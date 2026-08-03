@@ -3,100 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shaik Noore Yasmine | Web Developer</title>
+    <title>Shaik Noore Yasmine | Portfolio</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="logo">SNY</div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- Hero Section -->
     <header class="hero">
-        <h1>Hi, I'm <span class="highlight">Shaik Noore Yasmine</span></h1>
-        <p>Aspiring Web Developer | MCA Graduate | SEO Product Catlogue Manager</p>
-        <a href="#contact" class="btn">Let's Connect</a>
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Noore Yasmine</span></h1>
+            <p>Aspiring Front-End Developer | MCA Graduate | SEO Specialist</p>
+            <a href="#contact" class="btn-primary">Get In Touch</a>
+        </div>
     </header>
 
-    <section id="skills" class="skills-section">
-        <h2 align="center">Technical Arsenal</h2>
+    <!-- Skills Section (CSS Grid) -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">HTML5 & CSS3</div>
-            <div class="skill-card">JavaScript </div>
+            <div class="skill-card">JavaScript (ES6)</div>
             <div class="skill-card">React.js</div>
-            <div class="skill-card">Responsive Design</div>
             <div class="skill-card">Bootstrap</div>
-            <div class="skill-card">SEO</div>
+            <div class="skill-card">Responsive Design</div>
+            <div class="skill-card">Basic SEO</div>
         </div>
     </section>
 
-    <section id="experience" class="exp-container">
-        <h2 align="center">Professional Journey</h2>
-        <div class="flex-timeline">
+    <!-- Experience Section (Flexbox) -->
+    <section id="experience" class="section gray-bg">
+        <h2 class="section-title">Experience</h2>
+        <div class="exp-list">
             <div class="exp-item">
                 <h3>Etsy Store Management Executive</h3>
-                <p>Kontent Kraft Digital | Sept 2025 - Present</p>
+                <p class="company">Kontent Kraft Digital | 2025 - Present</p>
+                <p>Managed store operations, optimized listings, and improved product visibility.</p>
             </div>
             <div class="exp-item">
                 <h3>Product Catalog Manager</h3>
-                <p>Signel Biomedical | June 2024 - Aug 2025</p>
+                <p class="company">Signel Biomedical | 2024 - 2025</p>
+                <p>Maintained product data and collaborated with cross-functional teams.</p>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <section id="contact" class="contact-wrapper">
-    <div class="contact-card">
-        <!-- Header: Profile Icon and Name -->
-        <div class="contact-header">
-            <div class="profile-icon">SNY</div>
-            <div class="header-text">
-                <h2>Shaik Noore Yasmine</h2>
-                <p class="subtitle">Front-End Developer | MCA Graduate</p>
+    <!-- Dark Contact Card Section -->
+    <section id="contact" class="contact-wrapper">
+        <div class="contact-card">
+            <div class="contact-header">
+                <div class="profile-icon">SNY</div>
+                <div class="header-text">
+                    <h2>Shaik Noore Yasmine</h2>
+                    <p class="subtitle">Front-End Developer</p>
+                </div>
             </div>
+
+            <div class="contact-details">
+                <div class="detail-row">
+                    <span class="label">Location</span>
+                    <span class="value">Andhra Pradesh, India</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Email</span>
+                    <span class="value cyan">nooreyasmine@gmail.com</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">LinkedIn</span>
+                    <span class="value"><a href="https://www.linkedin.com/in/shaik-noore-yasmine-ba3b0b254" target="_blank" class="link-cyan">@shaik-noore-yasmine</a></span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">GitHub</span>
+                    <span class="value"><a href="https://github.com/nooreyasmine" target="_blank" class="link-cyan">@nooreyasmine</a></span>
+                </div>
+            </div>
+
+            <button class="copy-btn" onclick="copyEmail()">
+                COPY DIRECT EMAIL
+            </button>
         </div>
+    </section>
 
-        <!-- Contact Rows using Flexbox -->
-        <div class="contact-details">
-            <div class="detail-row">
-                <span class="label">Location</span>
-                <span class="value">Nidadavole, Andhra Pradesh</span>
-            </div>
-            <div class="detail-row">
-                <span class="label">Email</span>
-                <span class="value cyan">nooreyasmine@gmail.com</span>
-            </div>
-            <div class="detail-row">
-                <span class="label">LinkedIn</span>
-                <span class="value"><a href="https://www.linkedin.com/in/shaik-noore-yasmine-ba3b0b254" target="_blank" class="link-cyan">@shaik-noore-yasmine</a></span>
-            </div>
-            <div class="detail-row">
-                <span class="label">GitHub</span>
-                <span class="value"><a href="https://github.com/nooreyasmine" target="_blank" class="link-cyan">@nooreyasmine</a></span>
-            </div>
-        </div>
-
-        <!-- Copy Email Button -->
-        <button class="copy-btn" onclick="copyEmail()">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
-            COPY DIRECT EMAIL
-        </button>
-    </div>
-</section>
-
-<!-- Small JavaScript for the button functionality -->
-<script>
-function copyEmail() {
-    navigator.clipboard.writeText('nooreyasmine@gmail.com');
-    alert('Email copied to clipboard!');
-}
-</script>
-    </footer>
+    <script>
+        function copyEmail() {
+            navigator.clipboard.writeText('nooreyasmine@gmail.com');
+            alert('Email copied to clipboard!');
+        }
+    </script>
 </body>
 </html>
