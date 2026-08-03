@@ -51,8 +51,52 @@
     </section>
 
     <footer id="contact">
-        <p>Email: nooreyasmine@gmail.com</p>
-        <p>Location: Nidadavole, Andhra Pradesh</p>
+        <section id="contact" class="contact-wrapper">
+    <div class="contact-card">
+        <!-- Header: Profile Icon and Name -->
+        <div class="contact-header">
+            <div class="profile-icon">SNY</div>
+            <div class="header-text">
+                <h2>Shaik Noore Yasmine</h2>
+                <p class="subtitle">Front-End Developer | MCA Graduate</p>
+            </div>
+        </div>
+
+        <!-- Contact Rows using Flexbox -->
+        <div class="contact-details">
+            <div class="detail-row">
+                <span class="label">Location</span>
+                <span class="value">Nidadavole, Andhra Pradesh</span>
+            </div>
+            <div class="detail-row">
+                <span class="label">Email</span>
+                <span class="value cyan">nooreyasmine@gmail.com</span>
+            </div>
+            <div class="detail-row">
+                <span class="label">LinkedIn</span>
+                <span class="value"><a href="https://www.linkedin.com/in/shaik-noore-yasmine-ba3b0b254" target="_blank" class="link-cyan">@shaik-noore-yasmine</a></span>
+            </div>
+            <div class="detail-row">
+                <span class="label">GitHub</span>
+                <span class="value"><a href="https://github.com/nooreyasmine" target="_blank" class="link-cyan">@nooreyasmine</a></span>
+            </div>
+        </div>
+
+        <!-- Copy Email Button -->
+        <button class="copy-btn" onclick="copyEmail()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            COPY DIRECT EMAIL
+        </button>
+    </div>
+</section>
+
+<!-- Small JavaScript for the button functionality -->
+<script>
+function copyEmail() {
+    navigator.clipboard.writeText('nooreyasmine@gmail.com');
+    alert('Email copied to clipboard!');
+}
+</script>
     </footer>
 </body>
 </html>
